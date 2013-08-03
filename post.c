@@ -55,6 +55,7 @@ int main(void)
        if((fp=fopen(title,"w"))==NULL)
    {
        printf("can't not open the file");
+       exit(0);
    }
    fprintf(fp,"%s","---\nlayout: post\ntitle: ");
    fprintf(fp,"%s","\"");
